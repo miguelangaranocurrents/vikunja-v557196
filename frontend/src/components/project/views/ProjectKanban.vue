@@ -350,6 +350,9 @@ const projectId = toRef(props, 'projectId')
 const DRAG_OPTIONS = {
 	// sortable options
 	animation: 150,
+	// Start auto-scrolling when the pointer is within this many px of the board edge.
+	// SortableJS defaults to 30px, which is too narrow to reach buckets off screen.
+	scrollSensitivity: 80,
 	ghostClass: 'ghost',
 	dragClass: 'task-dragging',
 	delayOnTouchOnly: true,
